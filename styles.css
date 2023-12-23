@@ -1130,6 +1130,10 @@ button:hover .index {
         right: 0px;
     }
 
+    .ResumeSobre h1{
+        text-align: center;
+    }
+
     .ResumeSobre p{
         text-align: center;
     }
