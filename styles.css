@@ -26,11 +26,11 @@
 
 canvas{
     width: 100%;
-    height: 100%;
+    height: 100dvh;
 }
 
 section{
-    min-height: 100vh;
+    min-height: 100dvh;
 }
 
 .menumobi{
@@ -38,7 +38,7 @@ section{
 }
 
 .inicio{
-    height: 100dvh;
+    height: auto;
     overflow: hidden;
 }
 
@@ -295,6 +295,7 @@ section{
 }
 
 #Sobre {
+    margin-top: -100px;
     background: linear-gradient(#000000, 80%, #000613);
     min-height: 100vh;
     display: flex;
