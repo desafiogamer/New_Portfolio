@@ -1385,10 +1385,12 @@ button:hover .index {
 
     .title-contact h1{
         padding: 20px;
+        text-align: center;
     }
 
     .title-contact p{
         padding: 20px;
+        text-align: center;
     }
 
 @keyframes entrada{
