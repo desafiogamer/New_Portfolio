@@ -38,7 +38,8 @@ section{
 }
 
 .inicio{
-    overflow-x: hidden;
+    height: 100dvh;
+    overflow: hidden;
 }
 
 .icon{
