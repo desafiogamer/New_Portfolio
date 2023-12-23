@@ -1382,7 +1382,14 @@ button:hover .index {
     #Contact{
         margin-top: -60px;
     }
-}
+
+    .title-contact h1{
+        padding: 20px;
+    }
+
+    .title-contact p{
+        padding: 20px;
+    }
 
 @keyframes entrada{
     0%{
