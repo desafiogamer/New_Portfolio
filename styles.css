@@ -271,6 +271,7 @@ section{
 .ResumeSobre h3 span {
     position: relative;
     padding-right: 10px;
+    pointer-events: all;
 }
 
 .ResumeSobre h3 span::before {
