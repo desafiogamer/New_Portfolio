@@ -272,10 +272,6 @@ section{
     position: relative;
     padding-right: 10px;
     pointer-events: all;
-}
-
-.ResumeSobre h3 span::before {
-    content: "Realidade Digital.";
     color: var(--main-second-color);
 }
 
