@@ -274,7 +274,7 @@ section{
 }
 
 .ResumeSobre h3 span::before {
-    content: "Realidade Digital.";
+    content: "";
     color: var(--main-second-color);
 }
 
@@ -284,7 +284,8 @@ section{
     height: 100%;
     right: 0;
     border-left: 2px solid var(--main-second-color);
-    animation:  cursor .8s infinite, digitar 20s steps(15) infinite;
+    animation:  cursor .8s infinite;
+    animation: digitar 20s steps(15) infinite;
     width: 100%;
     background-color: black;
 }
@@ -1414,27 +1415,11 @@ button:hover .index {
 
 @keyframes digitar {
 
-    10%,
-    15%,
-    30%,
-    35%,
-    50%,
-    55%,
-    70%,
-    75%,
-    90%,
-    95% {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95% {
         width: 0;
     }
 
-    5%,
-    20%,
-    25%,
-    40%,
-    60%,
-    65%,
-    80%,
-    85% {
+    5%,20%,25%,40%,60%,65%,80%,85% {
         width: 100%;
     }
 }
