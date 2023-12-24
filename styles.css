@@ -285,9 +285,20 @@ section{
     right: 0;
     border-left: 2px solid var(--main-second-color);
     animation:  cursor .8s infinite;
-    animation: digitar 20s steps(15) infinite;
+    animation: teste 18s steps(15) infinite;
     width: 100%;
     background-color: black;
+}
+
+@keyframes teste {
+
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95% {
+        width: 0;
+    }
+
+    5%,20%,25%,40%,60%,65%,80%,85% {
+        width: 100%;
+    }
 }
 
 .ResumeSobre p{
@@ -1410,17 +1421,6 @@ button:hover .index {
     100%{
         opacity: 1;
         transform: rotate3d(0, 0, 0);
-    }
-}
-
-@keyframes digitar {
-
-    10%,15%,30%,35%,50%,55%,70%,75%,90%,95% {
-        width: 0;
-    }
-
-    5%,20%,25%,40%,60%,65%,80%,85% {
-        width: 100%;
     }
 }
 
