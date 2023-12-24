@@ -275,7 +275,7 @@ section{
 }
 
 .ResumeSobre h3 span::before {
-    content: "";
+    content: "Realidade Digital.";
     color: var(--main-second-color);
 }
 
