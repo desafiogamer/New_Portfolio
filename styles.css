@@ -49,6 +49,7 @@ section{
     left: 60px;
     transition: .5s;
     z-index: 999;
+    cursor: none;
 }
 
 .icon a{
