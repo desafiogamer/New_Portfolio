@@ -1,4 +1,6 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap');
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -24,26 +26,26 @@
     border: 1px solid var(--main-color);
 }
 
-canvas{
+canvas {
     width: 100%;
     height: 100dvh;
 }
 
-section{
+section {
     min-height: 100dvh;
 }
 
-.menumobi{
+.menumobi {
     display: none;
 }
 
-.inicio{
+.inicio {
     height: auto;
     overflow: hidden;
     padding-bottom: 100px;
 }
 
-.icon{
+.icon {
     position: fixed;
     top: 30px;
     left: 60px;
@@ -51,19 +53,19 @@ section{
     z-index: 999;
 }
 
-.icon a{
+.icon a {
     text-decoration: none;
     color: var(--text-color);
     font-weight: bolder;
     font-size: 30px;
-    cursor:default;
+    cursor: default;
 }
 
-.icon:hover{
+.icon:hover {
     transform: rotate(-10deg);
 }
 
-.icon a span{
+.icon a span {
     color: #1e8fffbd;
     font-weight: 100;
 }
@@ -239,13 +241,13 @@ section{
     box-shadow: -100px 110px 20px #00000070;
 }
 
-.ResumeSobre{
+.ResumeSobre {
     position: absolute;
     width: 450px;
     height: 450px;
     margin-top: 140px;
     right: 40px;
-    background: linear-gradient(to left, #000000, 85%,transparent);
+    background: linear-gradient(to left, #000000, 85%, transparent);
     box-shadow: 20px 0 10px 0 #2982b92f;
     border-radius: 50%;
     display: flex;
@@ -255,16 +257,19 @@ section{
     pointer-events: none;
 }
 
-.ResumeSobre h1, h3, p{
+.ResumeSobre h1,
+h3,
+p {
     color: var(--text-color);
 }
 
-.ResumeSobre h1{
+.ResumeSobre h1 {
     font-size: 40px;
     margin-bottom: 5px;
+    font-family: 'Inter', sans-serif;
 }
 
-.ResumeSobre h3{
+.ResumeSobre h3 {
     font-size: 23px;
     margin-bottom: 20px;
 }
@@ -282,7 +287,7 @@ section{
     height: 100%;
     right: 0;
     border-left: 2px solid var(--main-second-color);
-    animation:  cursor .8s infinite;
+    animation: cursor .8s infinite;
     animation: teste 18s steps(15) infinite;
     width: 100%;
     background-color: black;
@@ -290,16 +295,32 @@ section{
 
 @keyframes teste {
 
-    10%,15%,30%,35%,50%,55%,70%,75%,90%,95% {
+    10%,
+    15%,
+    30%,
+    35%,
+    50%,
+    55%,
+    70%,
+    75%,
+    90%,
+    95% {
         width: 0;
     }
 
-    5%,20%,25%,40%,60%,65%,80%,85% {
+    5%,
+    20%,
+    25%,
+    40%,
+    60%,
+    65%,
+    80%,
+    85% {
         width: 100%;
     }
 }
 
-.ResumeSobre p{
+.ResumeSobre p {
     font-size: 17px;
     color: #ffffff9f;
     margin: 0 50px;
@@ -361,7 +382,7 @@ section{
     box-shadow: 0px 0px 0px 0px var(--main-second-color);
     height: 90px;
     transition: all .8s ease;
-    
+
 }
 
 .service:hover .service-img img {
@@ -408,7 +429,7 @@ section{
 
 }
 
-.services-heading span{
+.services-heading span {
     color: var(--main-second-color);
 }
 
@@ -425,61 +446,62 @@ section{
     margin-bottom: -50px;
 }
 
-.services-heading-one span{
+.services-heading-one span {
     color: #ffffff73;
 }
 
-.sobre-container{
+.sobre-container {
     width: 900px;
     height: 100%;
     display: flex;
     margin-left: 200px;
 }
 
-.titulo-box{
+.titulo-box {
     width: 50%;
     padding-right: 40px;
     pointer-events: none;
 }
 
-.titulo-box h1{
+.titulo-box h1 {
     font-size: 30px;
     color: var(--text-color);
     margin-bottom: 10px;
+    font-family: 'Inter', sans-serif;
 }
 
-.titulo-box h1 span{
+.titulo-box h1 span {
     color: var(--main-second-color);
 }
 
-.titulo-box p{
+.titulo-box p {
     color: #ffffff83;
     margin-bottom: 30px;
     line-height: 1.5;
 }
 
-.titulo-box p strong{
+.titulo-box p strong {
     color: #ffffffad;
 }
 
-.contrib{
+.contrib {
     display: flex;
 }
 
-.contrib-box{
+.contrib-box {
     width: 100px;
     margin-right: 10px;
 }
 
-.contrib-box h3{
+.contrib-box h3 {
     color: var(--main-second-color);
 }
 
-.contrib-box span{
+.contrib-box span {
     color: var(--text-color);
 }
 
-.skills-box{
+.skills-box {
     padding-left: 60px;
 }
 
@@ -488,7 +510,7 @@ section{
     margin-bottom: 20px;
 }
 
-.titulos h5{
+.titulos h5 {
     color: var(--text-color);
     font-size: 17px;
     margin-right: 20px;
@@ -497,21 +519,21 @@ section{
     pointer-events: none;
 }
 
-.frontend{
+.frontend {
     display: flex;
     height: 40px;
     align-items: center;
     overflow: hidden;
 }
 
-.frontend p{
+.frontend p {
     color: #ffffffa8;
     margin-right: 10px;
     pointer-events: none;
     font-size: 17px;
 }
 
-.frontend img{
+.frontend img {
     width: 25px;
     margin-right: 20px;
     transition: .3s;
@@ -521,7 +543,7 @@ section{
     transform: scale(1.2);
 }
 
-.linguagens{
+.linguagens {
     display: flex;
     color: #ffffff5b;
     font-size: 10px;
@@ -529,7 +551,7 @@ section{
     margin-bottom: 20px;
 }
 
-.linguagens span{
+.linguagens span {
     margin-right: 18px;
 }
 
@@ -537,7 +559,7 @@ section{
     margin-left: 5px;
 }
 
-.linguagens span:nth-child(4){
+.linguagens span:nth-child(4) {
     margin-left: -5px;
 }
 
@@ -545,7 +567,7 @@ section{
     margin-left: -3px;
 }
 
-.backend{
+.backend {
     display: flex;
     height: 40px;
     align-items: center;
@@ -580,7 +602,7 @@ section{
     margin-left: 83px;
 }
 
-.linguagensTwo span{
+.linguagensTwo span {
     margin-right: 13px;
 }
 
@@ -588,11 +610,11 @@ section{
     margin-right: 20px;
 }
 
-.linguagensTwo span:nth-child(4){
+.linguagensTwo span:nth-child(4) {
     margin-right: 27px;
 }
 
-#portfolio{
+#portfolio {
     padding-left: 150px;
     background: linear-gradient(#000613, 60%, #060008);
     min-height: 100vh;
@@ -600,7 +622,7 @@ section{
     overflow-x: hidden;
 }
 
-.title-portfolio{
+.title-portfolio {
     width: 100%;
     padding-top: 100px;
     display: flex;
@@ -609,26 +631,27 @@ section{
     margin-left: 20px;
 }
 
-.title-portfolio h1{
+.title-portfolio h1 {
     font-size: 40px;
     color: var(--text-color);
     margin-bottom: 10px;
+    font-family: 'Inter', sans-serif;
 }
 
-.title-portfolio span{
+.title-portfolio span {
     color: var(--main-second-color);
 }
 
-.title-portfolio p{
+.title-portfolio p {
     color: rgba(255, 255, 255, 0.76);
     font-size: 17px;
 }
 
-#portfolio-content{
+#portfolio-content {
     margin-top: -20px;
 }
 
-.title-portfolio p span{
+.title-portfolio p span {
     color: #ffffff88;
 }
 
@@ -749,7 +772,7 @@ button:hover .index {
     text-align: center;
 }
 
-#Contact{
+#Contact {
     padding-top: 8%;
     background: linear-gradient(#060008, 60%, #16001d);
     display: flex;
@@ -757,47 +780,48 @@ button:hover .index {
     align-items: center;
 }
 
-.title-contact{
+.title-contact {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-left: 130px;
 }
 
-.title-contact h1{
+.title-contact h1 {
     color: var(--text-color);
     font-size: 40px;
+    font-family: 'Inter', sans-serif;
 }
 
-.title-contact h1 span{
+.title-contact h1 span {
     color: var(--main-second-color);
 }
 
-.title-contact p{
+.title-contact p {
     color: #ffffffd2;
     font-size: 17px;
 }
 
-.title-contact p span{
+.title-contact p span {
     color: #ffffff88;
 }
 
-#contact-form{
+#contact-form {
     width: 500px;
     margin-top: 50px;
     margin-left: 140px;
 }
 
-.input-box{
+.input-box {
     display: flex;
 }
 
-.input-field{
+.input-field {
     width: 48%;
     margin-right: 10px;
 }
 
-.input-field input{
+.input-field input {
     width: 100%;
     height: 30px;
     border-radius: 5px;
@@ -814,11 +838,11 @@ button:hover .index {
     border: 1px solid var(--main-second-color);
 }
 
-.textarea-field{
+.textarea-field {
     width: 100%;
 }
 
-.textarea-field textarea{
+.textarea-field textarea {
     width: 98%;
     border-radius: 10px;
     background: transparent;
@@ -834,14 +858,14 @@ button:hover .index {
     border: 1px solid var(--main-second-color);
 }
 
-.btn{
+.btn {
     width: 100%;
     display: flex;
     justify-content: center;
     color: #ff2600;
 }
 
-.btn button{
+.btn button {
     position: relative;
     background: transparent;
     display: flex;
@@ -855,24 +879,24 @@ button:hover .index {
     cursor: pointer;
 }
 
-.btn button:hover{
+.btn button:hover {
     border: 1px solid var(--main-second-color);
     filter: drop-shadow(0 0 5px var(--main-second-color))
 }
 
-.btn .logo-enviar{
+.btn .logo-enviar {
     position: absolute;
     opacity: 0;
     transition: .4s;
 }
 
-.btn .texto{
+.btn .texto {
     position: absolute;
     transition: .4s;
     opacity: 1;
 }
 
-.btn button:hover .texto{
+.btn button:hover .texto {
     opacity: 0;
 }
 
@@ -883,54 +907,54 @@ button:hover .index {
 }
 
 @media(max-width: 1300px) {
-    #portfolio-content{
+    #portfolio-content {
         width: 90%;
         margin-left: 100px;
     }
 
-    .services-content{
+    .services-content {
         width: 100%;
     }
 
-    .service{
-        margin: 0; 
+    .service {
+        margin: 0;
     }
 
-    .service-one{
+    .service-one {
         margin-left: -50px;
         margin-right: 100px;
     }
 
-    .sobre-container{
+    .sobre-container {
         margin-left: 240px;
     }
 
 }
 
-@media(max-width: 1200px){
-    #Sobre{
+@media(max-width: 1200px) {
+    #Sobre {
         padding-top: 100px;
     }
 
-    .icones li{
+    .icones li {
         width: 70px;
         height: 70px;
     }
 
-    .skills-box{
+    .skills-box {
         margin-left: -40px;
     }
 
-    .portfolio{
+    .portfolio {
         margin-top: -220px;
         margin-left: -100px;
     }
 
-    .portfolio-image img{
+    .portfolio-image img {
         width: 700px;
     }
 
-    .portfolio-text{
+    .portfolio-text {
         margin-left: -630px;
         margin-top: 680px;
         width: 600px;
@@ -1004,11 +1028,11 @@ button:hover .index {
         transition: 0.5s;
     }
 
-    .Menu3d li a i{
+    .Menu3d li a i {
         display: none;
     }
 
-    .Menu3d li a span{
+    .Menu3d li a span {
         position: absolute;
         opacity: 0;
     }
@@ -1024,11 +1048,11 @@ button:hover .index {
         display: none;
     }
 
-    .icon{
+    .icon {
         display: none;
     }
 
-    .ResumeSobre{
+    .ResumeSobre {
         border-radius: 0;
         box-shadow: none;
         align-items: baseline;
@@ -1039,11 +1063,11 @@ button:hover .index {
         background: linear-gradient(to right, #000000, 85%, transparent);
     }
 
-    .ResumeSobre h1{
+    .ResumeSobre h1 {
         font-size: 35px;
     }
 
-    .icones{
+    .icones {
         left: 50px;
         z-index: 999;
     }
@@ -1055,12 +1079,12 @@ button:hover .index {
         margin: 0;
     }
 
-    .service{
+    .service {
         width: 90%;
         margin: 0 auto;
     }
 
-    .sobre-container{
+    .sobre-container {
         width: 100%;
         margin: 0;
         display: grid;
@@ -1068,47 +1092,47 @@ button:hover .index {
         padding: 0;
     }
 
-    .titulo-box{
+    .titulo-box {
         width: 100%;
         margin: 0 auto;
         margin-left: 40px;
     }
 
-    .skills-box{
+    .skills-box {
         margin: 0 auto;
         padding: 0;
     }
 
-    #portfolio{
+    #portfolio {
         padding-left: 0;
     }
 
-    .title-portfolio{
+    .title-portfolio {
         margin-left: 0;
     }
 
     .services-heading {
         margin-left: 0;
     }
-    
+
     .services-heading-one {
         margin-left: 0;
         margin-bottom: 0px;
     }
 
-    #portfolio-content{
+    #portfolio-content {
         width: 100%;
     }
 
-    #Contact{
+    #Contact {
         width: 100%;
     }
 
-    .title-contact{
+    .title-contact {
         margin-left: 0px;
     }
 
-    #contact-form{
+    #contact-form {
         margin-left: 20px;
         padding-bottom: 100px;
     }
@@ -1116,11 +1140,11 @@ button:hover .index {
 
 @media(max-width: 785px) {
 
-    #inicio{
+    #inicio {
         pointer-events: none;
     }
 
-    .icones{
+    .icones {
         width: 100%;
         justify-content: center;
         left: 0;
@@ -1128,11 +1152,11 @@ button:hover .index {
     }
 
     .icones li a i,
-    .icones li a span{
+    .icones li a span {
         filter: drop-shadow(0 0 20px var(--clr)) drop-shadow(0 0 40px var(--clr)) drop-shadow(0 0 60px var(--clr))
     }
 
-    .ResumeSobre{
+    .ResumeSobre {
         height: 100%;
         width: 100%;
         background: #000000d0;
@@ -1140,34 +1164,34 @@ button:hover .index {
         right: 0px;
     }
 
-    .ResumeSobre h1{
+    .ResumeSobre h1 {
         text-align: center;
     }
 
-    .ResumeSobre p{
+    .ResumeSobre p {
         text-align: center;
     }
 
-    #Sobre{
+    #Sobre {
         padding: 30px;
     }
 
-    .services-content{
+    .services-content {
         margin-left: 0;
         padding: 0 3%;
         padding-bottom: 10%;
     }
 
-    .service{
+    .service {
         height: auto;
     }
 
-    .sobre-container{
+    .sobre-container {
         display: flex;
         flex-direction: column;
     }
 
-    .titulo-box{
+    .titulo-box {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1177,12 +1201,12 @@ button:hover .index {
     }
 
 
-    .titulo-box h1{
+    .titulo-box h1 {
         text-align: center;
         margin-bottom: 30px;
     }
 
-    .skills-box{
+    .skills-box {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -1190,12 +1214,12 @@ button:hover .index {
         align-items: center;
     }
 
-    .titulos{
+    .titulos {
         width: 100%;
         justify-content: center;
     }
 
-    #portfolio{
+    #portfolio {
         width: 100%;
         margin: 0;
         padding: 0;
@@ -1204,7 +1228,7 @@ button:hover .index {
         align-items: center;
     }
 
-    #portfolio-content{
+    #portfolio-content {
         margin: 0;
         padding: 0;
     }
@@ -1221,14 +1245,14 @@ button:hover .index {
         margin-left: 0;
     }
 
-    .portfolio-image{
+    .portfolio-image {
         width: 100%;
         padding: 0;
         margin: 0;
         left: 0;
     }
 
-    .portfolio-image img{
+    .portfolio-image img {
         width: 80%;
         padding: 0;
         margin: 0;
@@ -1250,51 +1274,51 @@ button:hover .index {
         margin-bottom: 250px;
     }
 
-    .portfolio-text h2{
+    .portfolio-text h2 {
         font-size: 24px;
     }
 
-    .portfolio-text p{
+    .portfolio-text p {
         font-size: 15px;
     }
 
-    #Contact{
+    #Contact {
         margin-top: 0;
         padding-top: 0;
         width: 100%;
     }
 
-    .title-contact{
-        
+    .title-contact {
+
         padding-top: 0;
         margin-left: 0;
     }
 
-    #contact-form{
+    #contact-form {
         width: 80%;
         margin-top: 50px;
     }
 }
 
 @media(max-width: 785px) {
-    #portfolio-content{
+    #portfolio-content {
         margin-top: 200px;
     }
 
-    #Sobre{
+    #Sobre {
         padding: 0;
     }
 
-    .services-content{
+    .services-content {
         display: flex;
         flex-direction: column;
     }
 
-    .service{
+    .service {
         margin-bottom: 30px;
     }
 
-    .sobre-container{
+    .sobre-container {
         padding-left: 30px;
     }
 
@@ -1303,7 +1327,7 @@ button:hover .index {
         margin-bottom: 50px;
     }
 
-    #Contact{
+    #Contact {
         margin-top: -140px;
     }
 }
@@ -1314,20 +1338,20 @@ button:hover .index {
         margin-bottom: 150px;
     }
 
-    #portfolio-content{
+    #portfolio-content {
         margin-top: 150px;
     }
 
-    .input-box{
+    .input-box {
         flex-direction: column;
         width: 98%;
     }
 
-    .input-field{
+    .input-field {
         width: 100%;
     }
 
-    #Contact{
+    #Contact {
         margin-top: -100px;
     }
 }
@@ -1337,55 +1361,55 @@ button:hover .index {
         margin-top: -150px;
     }
 
-    #portfolio-content{
+    #portfolio-content {
         margin-top: 120px;
     }
 
-    .frontend{
+    .frontend {
         display: flex;
         flex-direction: column;
         align-items: center;
         height: 60px;
     }
 
-    .frontend p{
+    .frontend p {
         margin-bottom: 10px;
     }
 
-    .linguagens{
+    .linguagens {
         margin-bottom: 40px;
         margin-left: 15px;
     }
 
-    .linguagens span{
+    .linguagens span {
         margin-right: 20px;
     }
 
-    .backend{
+    .backend {
         display: flex;
         flex-direction: column;
         align-items: center;
         height: 60px;
     }
 
-    .backend p{
+    .backend p {
         margin-bottom: 10px;
     }
 
-    .linguagensTwo{
+    .linguagensTwo {
         margin-bottom: 40px;
         margin-left: 30px;
     }
 
-    .linguagensTwo span{
+    .linguagensTwo span {
         margin-right: 13px;
     }
 
-    .linguagensTwo span:nth-child(3){
+    .linguagensTwo span:nth-child(3) {
         margin-right: 20px;
     }
 
-    .linguagensTwo span:nth-child(4){
+    .linguagensTwo span:nth-child(4) {
         margin-right: 30px;
     }
 }
@@ -1396,34 +1420,35 @@ button:hover .index {
         margin-bottom: 120px;
     }
 
-    #Contact{
+    #Contact {
         margin-top: -60px;
     }
 
-    .title-contact h1{
+    .title-contact h1 {
         padding: 20px;
         text-align: center;
     }
 
-    .title-contact p{
+    .title-contact p {
         padding: 20px;
         text-align: center;
     }
 
-@keyframes entrada{
-    0%{
-        opacity: 0;
-        transform: translate3d(20px, 0, -5px);
+    @keyframes entrada {
+        0% {
+            opacity: 0;
+            transform: translate3d(20px, 0, -5px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: rotate3d(0, 0, 0);
+        }
     }
 
-    100%{
-        opacity: 1;
-        transform: rotate3d(0, 0, 0);
-    }
-}
-
-@keyframes cursor {
-    0% {
-        border-left: 2px solid black;
+    @keyframes cursor {
+        0% {
+            border-left: 2px solid black;
+        }
     }
 }
