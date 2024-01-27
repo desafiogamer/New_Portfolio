@@ -1436,8 +1436,7 @@ button:hover .index {
     }
 
     .whatsapp{
-        right: 30px;
-        top: 80%;
+        display: none;
     }
 }
 
