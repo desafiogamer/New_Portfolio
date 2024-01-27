@@ -686,6 +686,7 @@ p {
     align-items: center;
     padding-top: 50px;
     margin-left: 20px;
+    pointer-events: all!important;
 }
 
 .divisaoProjetos span{
@@ -694,6 +695,7 @@ p {
     margin-left: 20px;
     cursor: pointer;
     transition: .4s;
+    pointer-events: all!important;
 }
 
 .divisaoProjetos span:first-child{
