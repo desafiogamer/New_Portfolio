@@ -47,6 +47,8 @@ full.addEventListener('click', ()=>{
 })
 
 todos.addEventListener('click', () => {
+    projetosFront.classList.remove('ativo')
+    projetosFull.classList.remove('ativo')
     projetosFront.classList.add('ativo')
     projetosFull.classList.add('ativo')
     todos.style.color = '#1E90FF'
