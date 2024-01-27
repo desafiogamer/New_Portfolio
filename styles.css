@@ -687,6 +687,7 @@ p {
     padding-top: 50px;
     margin-left: 20px;
     pointer-events: all!important;
+    z-index: 888;
 }
 
 .divisaoProjetos span{
