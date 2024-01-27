@@ -29,6 +29,7 @@ let projetosFront = document.querySelector('.front-end')
 let projetosFull = document.querySelector('.full-stacks')
 
 front.addEventListener('click', ()=>{
+    projetosFront.classList.remove('ativo')
     projetosFront.classList.add('ativo')
     projetosFull.classList.remove('ativo')
     front.style.color = '#1E90FF'
@@ -39,6 +40,7 @@ front.addEventListener('click', ()=>{
 
 full.addEventListener('click', ()=>{
     projetosFront.classList.remove('ativo')
+    projetosFull.classList.remove('ativo')
     projetosFull.classList.add('ativo')
     full.style.color = '#1E90FF'
     front.style.color = '#ffffff'
