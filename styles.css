@@ -32,13 +32,13 @@ canvas {
 }
 
 .box-load{
-    position: absolute;
+    position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100dvh;
+    height: 100vh;
     background: black;
     z-index: 9999;
 }
@@ -81,7 +81,6 @@ section {
     height: auto;
     overflow: hidden;
     padding-bottom: 100px;
-    display: none;
 }
 
 .icon {
