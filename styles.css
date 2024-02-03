@@ -440,6 +440,7 @@ p {
     padding: 10px;
     font-weight: 200;
     font-size: 16px;
+    line-height: 1.3;
     opacity: .8;
 }
 
@@ -495,14 +496,14 @@ p {
     pointer-events: none;
 }
 
-.titulo-box h1 {
+.titulo-box h2 {
     font-size: 30px;
     color: var(--text-color);
     margin-bottom: 10px;
     font-family: 'Inter', sans-serif;
 }
 
-.titulo-box h1 span {
+.titulo-box h2 span {
     color: var(--main-second-color);
 }
 
@@ -674,7 +675,7 @@ p {
     color: var(--main-second-color);
 }
 
-.title-portfolio p {
+.title-portfolio h3 {
     color: rgba(255, 255, 255, 0.76);
     font-size: 17px;
 }
@@ -893,12 +894,12 @@ button:hover .index {
     color: var(--main-second-color);
 }
 
-.title-contact p {
+.title-contact h3 {
     color: #ffffffd2;
     font-size: 17px;
 }
 
-.title-contact p span {
+.title-contact h3 span {
     color: #ffffff88;
 }
 
