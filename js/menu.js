@@ -24,14 +24,31 @@ window.onscroll = () => {
 
 let front = document.getElementById('front')
 let full = document.getElementById('full')
+let todos = document.getElementById('todos')
 let projetosFront = document.querySelector('.front-end')
 let projetosFull = document.querySelector('.full-stacks')
+
+todos.addEventListener('click', ()=>{
+    projetosFront.classList.add('ativo')
+    projetosFull.classList.add('ativo')
+    todos.style.color = '#1E90FF'
+    todos.style.borderBottom = '1px solid #1E90FF'
+    full.style.color = '#ffffff'
+    full.style.borderBottom = 'none'
+    front.style.color = '#ffffff'
+    front.style.borderBottom = 'none'
+    front.classList.remove('ativo')
+})
 
 front.addEventListener('click', ()=>{
     projetosFront.classList.add('ativo')
     projetosFull.classList.remove('ativo')
     front.style.color = '#1E90FF'
+    front.style.borderBottom = '1px solid #1E90FF'
     full.style.color = '#ffffff'
+    full.style.borderBottom = 'none'
+    todos.style.color = '#ffffff'
+    todos.style.borderBottom = 'none'
     front.classList.remove('ativo')
 })
 
@@ -39,8 +56,10 @@ full.addEventListener('click', ()=>{
     projetosFront.classList.remove('ativo')
     projetosFull.classList.add('ativo')
     full.style.color = '#1E90FF'
+    full.style.borderBottom = '1px solid #1E90FF'
     front.style.color = '#ffffff'
+    front.style.borderBottom = 'none'
+    todos.style.color = '#ffffff'
+    todos.style.borderBottom = 'none'
     front.classList.remove('ativo')
 })
-
-
