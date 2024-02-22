@@ -31,7 +31,7 @@ canvas {
     height: 100dvh;
 }
 
-body{
+body {
     background: black;
 }
 
@@ -72,35 +72,35 @@ section {
     font-weight: 100;
 }
 
-.whatsapp{
+.whatsapp {
     position: fixed;
     right: 20px;
-    bottom: 20px;
+    bottom: 70px;
     animation: flutuando 3s linear infinite;
     z-index: 999;
 }
 
-@keyframes flutuando{
-    0%{
+@keyframes flutuando {
+    0% {
         transform: translateY(0);
     }
 
-    50%{
+    50% {
         transform: translateY(-5px);
     }
 
-    100%{
+    100% {
         transform: translateY(0);
     }
 }
 
-.whatsapp a i{
+.whatsapp a i {
     color: green;
     font-size: 30px;
     transition: .5s;
 }
 
-.whatsapp a i:hover{
+.whatsapp a i:hover {
     color: greenyellow;
 }
 
@@ -370,12 +370,207 @@ p {
     overflow-x: hidden;
 }
 
+.eu{
+    width: 100%;
+    perspective: 40vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 150px;
+    margin-top: 120px;
+}
+
+@property --ratio-x {
+    syntax: "<number>";
+    inherits: true;
+    initial-value: 0;
+}
+
+@property --ratio-y {
+    syntax: "<number>";
+    inherits: true;
+    initial-value: 0;
+}
+
+@property --ratio-reflection {
+    syntax: "<number>";
+    inherits: false;
+    initial-value: 0;
+}
+
+@property --deg {
+    syntax: "<angle>";
+    inherits: true;
+    initial-value: 0deg;
+}
+
+@property --start {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: #75e4ee;
+}
+
+@property --end {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: #f85fbe;
+}
+
+:root {
+    --labs-sys-color-surface: #444;
+    --labs-sys-color-on-surface: hsl(0, 100%, 0%);
+    --labs-sys-color-background: #333;
+    --labs-sys-radius-surface: 0.5vmin;
+    --labs-url-avatar: url(https://gravatar.com/avatar/bdf3dd08b9c2a5f3792dd103a192a765?size=300);
+}
+
+.avatar {
+    width: 100%;
+    aspect-ratio: 3/4;
+    border-radius: inherit;
+}
+
+.avatar img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+    height: 100%;
+}
+
+.card {
+    --start: #00a7e9;
+    --end: #f85fbe;
+    --deg: 45deg;
+    --ratio-x: 0.8;
+    --ratio-y: 0.4;
+    padding: 2vmin;
+    width: 32vmin;
+    background: url(https://assets.codepen.io/907471/noise.svg), linear-gradient(var(--deg), var(--start), var(--end));
+    animation: surface 10s linear infinite;
+    color: var(--labs-sys-color-on-surface);
+    border-radius: 2vmin;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.2s linear;
+    transform: rotateY(calc(-5deg * var(--ratio-x))) rotateX(calc(5deg * var(--ratio-y)));
+    box-shadow: 0 0 0 0.25vmin #ffffff1a, 0 0 0 2vmin #ffffff1a;
+}
+
+.card:before {
+    content: "";
+    position: absolute;
+    border-radius: inherit;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    --ratio-reflection: var(--ratio-x);
+    transition: all 0.2s linear;
+    mix-blend-mode: soft-light;
+    pointer-events: none;
+    z-index: 111;
+}
+
+.card:after {
+    --ratio-reflection: var(--ratio-y);
+    content: "";
+    border-radius: 3.4vmin;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(-145deg,
+            transparent 0%,
+            #ffffffe6 calc(var(--ratio-reflection) * 35%),
+            #ff00ff1a calc(var(--ratio-reflection) * 65%),
+            transparent 80%);
+    transition: all 0.2s linear;
+    mix-blend-mode: overlay;
+    pointer-events: none;
+    opacity: 0.4;
+    z-index: 111;
+    transform: scale(1.1);
+}
+
+.card.rotate {
+    animation: surface 10s linear infinite, rotate 6s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        --ratio-x: 1.2;
+        --ratio-y: 1.2;
+    }
+
+    50% {
+        --ratio-x: -0.6;
+        --ratio-y: -1;
+    }
+
+    to {
+        --ratio-x: 1.2;
+        --ratio-y: 1.2;
+    }
+}
+
+@keyframes surface {
+    from {
+        --deg: 45deg;
+        --start: #75e4ee;
+        --end: #f85fbe;
+    }
+
+    30% {
+        --deg: 285deg;
+        --start: #75e4ee;
+        --end: #75e4ee;
+    }
+
+    50% {
+        --deg: 145deg;
+        --start: #eeda75;
+        --end: #805ff8;
+    }
+
+    70% {
+        --deg: 345deg;
+        --start: #ee75d2;
+        --end: #5ff8e6;
+    }
+
+    from {
+        --deg: 45deg;
+        --start: #75e4ee;
+        --end: #f85fbe;
+    }
+}
+
+.ficha{
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+}
+
+.ficha p{
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.ficha p:last-child{
+    margin-bottom: 0;
+}
+
+.ficha p strong{
+    color: #82cdeb;
+}
+
 .services-content {
     height: auto;
     width: 100%;
     overflow: hidden;
     text-align: center;
-    padding: 8% 12%;
+    padding: 4% 12% 8% 12%;
     margin-left: 200px;
 }
 
@@ -680,75 +875,81 @@ p {
     font-size: 17px;
 }
 
-.divisaoProjetos{
+.divisaoProjetos {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 50px;
     margin-left: 20px;
-    pointer-events: all!important;
+    pointer-events: all !important;
     z-index: 888;
 }
 
-.divisaoProjetos span{
+.divisaoProjetos span {
     color: white;
     font-size: 20px;
     margin-left: 20px;
     cursor: pointer;
     transition: .4s;
-    pointer-events: all!important;
+    pointer-events: all !important;
+    padding-bottom: 5px;
 }
 
-.divisaoProjetos span:first-child{
+.divisaoProjetos span:first-child {
     margin-left: 0;
 }
 
-.divisaoProjetos span:hover{
+.divisaoProjetos span:hover {
     color: var(--main-second-color);
 }
 
-.divisaoProjetos span.ativo{
+.divisaoProjetos span.ativo {
     color: var(--main-second-color);
+    border-bottom: 1px solid var(--main-second-color);
 }
 
 #portfolio-content {
     margin-top: -20px;
 }
 
-.full-stacks{
+.full-stacks {
     display: none;
 }
 
-.full-stacks.ativo{
+.full-stacks.ativo {
     animation: entrada .5s linear;
     display: block;
     transition: .5s;
 }
 
-.front-end{
+.front-end {
     display: none;
 }
 
-.front-end.ativo{
+.front-end.ativo {
     animation: entrada .5s linear;
     display: block;
     transition: .5s;
 }
 
-@keyframes entrada{
-    0%{
+@keyframes entrada {
+    0% {
         opacity: 0;
         transform: translateX(-800px);
     }
 
-    100%{
+    100% {
         opacity: 1;
         transform: translateX(0);
     }
 }
 
-.title-portfolio p span {
+.title-portfolio h3{
+    color: #ffffffd3;
+}
+
+.title-portfolio h3 span {
     color: #ffffff88;
 }
 
@@ -1003,6 +1204,28 @@ button:hover .index {
     filter: drop-shadow(0 0 5px var(--main-second-color))
 }
 
+footer {
+    background: #010101;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    color: #ffffffbb;
+    text-align: center;
+}
+
+footer i {
+    background: var(--main-second-color);
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    margin-left: 10px;
+    transition: .3s;
+}
+
 @media(max-width: 1300px) {
     #portfolio-content {
         width: 90%;
@@ -1061,7 +1284,7 @@ button:hover .index {
 
 @media(max-width: 1100px) {
 
-    .whatsapp{
+    .whatsapp {
         right: 40px;
         top: 35px;
         z-index: 999;
@@ -1156,6 +1379,10 @@ button:hover .index {
         display: none;
     }
 
+    .eu{
+        padding-left: 0px;
+    }
+
     .ResumeSobre {
         border-radius: 0;
         box-shadow: none;
@@ -1219,7 +1446,7 @@ button:hover .index {
         margin-left: 0;
     }
 
-    .divisaoProjetos{
+    .divisaoProjetos {
         margin-left: 0;
     }
 
@@ -1244,6 +1471,10 @@ button:hover .index {
         margin-left: 20px;
         padding-bottom: 100px;
     }
+
+    footer{
+        display: none;
+    }
 }
 
 @media(max-width: 785px) {
@@ -1262,6 +1493,10 @@ button:hover .index {
     .icones li a i,
     .icones li a span {
         filter: drop-shadow(0 0 20px var(--clr)) drop-shadow(0 0 40px var(--clr)) drop-shadow(0 0 60px var(--clr))
+    }
+
+    .eu{
+        margin-bottom: 70px;
     }
 
     .ResumeSobre {
@@ -1432,14 +1667,14 @@ button:hover .index {
 
     .services-heading-one {
         margin-left: 0;
-        margin-bottom: 50px;
+        margin-bottom: 0px;
     }
 
     #Contact {
         margin-top: -140px;
     }
 
-    .whatsapp{
+    .whatsapp {
         display: none;
     }
 }
@@ -1454,6 +1689,14 @@ button:hover .index {
         margin-top: 150px;
     }
 
+    .eu{
+        padding: 0 40px;
+    }
+
+    .ficha p{
+        font-size: 15px;
+    }
+
     .input-box {
         flex-direction: column;
         width: 98%;
@@ -1465,6 +1708,28 @@ button:hover .index {
 
     #Contact {
         margin-top: -100px;
+    }
+}
+
+@media(max-width: 563px) {
+    .eu{
+        flex-direction: column;
+        padding: 0;
+        margin-top: 40px;
+    }
+
+    .ficha{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .ficha p{
+        margin-bottom: 15px;
     }
 }
 
