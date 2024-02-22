@@ -44,7 +44,6 @@ section {
 }
 
 #inicio {
-    height: 100dvh;
     overflow: hidden;
 }
 
@@ -363,7 +362,6 @@ p {
 
 #Sobre {
     background: linear-gradient(#000000, 80%, #000613);
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
