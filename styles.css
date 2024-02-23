@@ -35,16 +35,13 @@ body {
     background: black;
 }
 
-section {
-    min-height: 100dvh;
-}
-
 .menumobi {
     display: none;
 }
 
 #inicio {
     overflow: hidden;
+    height: auto;
 }
 
 .icon {
