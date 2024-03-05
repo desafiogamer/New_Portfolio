@@ -41,7 +41,7 @@ body {
 
 #inicio {
     overflow: hidden;
-    height: auto;
+    height: 100dvh;
 }
 
 .icon {
@@ -1069,7 +1069,7 @@ button:hover .index {
 
 #Contact {
     padding-top: 8%;
-    padding-bottom: 80px;
+    padding-bottom: 50px;
     background: linear-gradient(#060008, 60%, #16001d);
     display: flex;
     flex-direction: column;
