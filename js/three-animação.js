@@ -66,7 +66,7 @@ function init(){
         if(controls)
             controls.update();
 
-        renderer.render(scene, camera);
+        renderer.render(scene, camera)
         container.appendChild(renderer.domElement) 
     };
     animate();
