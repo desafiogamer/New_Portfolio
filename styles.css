@@ -33,7 +33,7 @@
     right: 0;
     bottom: 0;
     background-color: #242424;
-    z-index: 99999;
+    z-index: 9999;
 }
 
 .loader .title {
