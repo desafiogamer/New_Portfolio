@@ -3,7 +3,7 @@ import {OrbitControls} from '../jsm/OrbitControls.js';
 import {GLTFLoader} from '../jsm/GLTFLoader.js';
 
 function init(){
-    var scene = new THREE.Scene();		
+    var scene = new THREE.Scene()	
     scene.background = new THREE.Color(0x000000)
 	
     var camera = new THREE.PerspectiveCamera(17, window.innerWidth / window.innerHeight, 1, 5000);	
