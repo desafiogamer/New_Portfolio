@@ -1894,8 +1894,8 @@ footer i {
 
     .whatsapp {
         position: fixed;
-        right: 20px;
-        top: 80%;
+        right: 10px;
+        top: 83%;
         z-index: 9999;
         pointer-events: all;
     }
