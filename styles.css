@@ -1893,9 +1893,11 @@ footer i {
     }
 
     .whatsapp {
-        display: flex;
-        align-items: end;
-        right: 15px;
+        position: fixed;
+        right: 20px;
+        top: 80%;
+        z-index: 9999;
+        pointer-events: all;
     }
 }
 
